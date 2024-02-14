@@ -1,0 +1,107 @@
+@import '../../index.css';
+
+/* sidebar styles */
+.sidebar-container{
+    width: 300px;
+    background-color: var(--bs-primary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--bs-secondary-bg);
+    padding: 20px;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li.active{
+            background-color: #227c76;
+        }
+        li.visible{
+            border-radius: 10px;
+            padding: 10px 10px;
+            visibility: visible;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        li.invisible{
+            padding: 10px 10px;
+            visibility: hidden;
+        }
+    }
+}
+
+// header
+.header-container{
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 40px;
+    .header-right{
+        display: flex;
+        gap: 15px;
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+// chart
+.recharts-wrapper{
+    .recharts-surface{
+        .recharts-cartesian-grid{
+            .recharts-cartesian-grid-vertical{
+                line{
+                    display: none;
+                }
+            }
+          
+        }
+        .recharts-cartesian-axis{
+            line{
+                display: none;
+            }
+        }
+    }
+}
+
+// dashboard table
+.dashboard-table{
+    table{
+        width: 100%;
+        border-spacing: unset;
+        thead{
+            tr{
+                background-color: var(--bs-primary-color);
+                th{
+                    padding: 10px 10px;
+                    color: var(--bs-primary-text);
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+                td{
+                    padding: 10px 10px;
+                    text-align: center;
+                    color: var(--bs-secondary-text);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

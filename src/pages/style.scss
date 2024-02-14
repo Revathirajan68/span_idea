@@ -1,0 +1,23 @@
+.dashboard-container {
+  h1{
+    margin-bottom: 40px;
+  }
+
+    .dashboard-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+        .chart-table-container {
+            .chart-card, .table-card{
+                height: 400px;
+                padding: 20px 15px !important;
+            }
+        }
+    }
+
+}
